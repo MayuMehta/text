@@ -1,4 +1,5 @@
 import React from "react";
+import ceo from "../assets/copy.png"
 
 export default function About(props) {
   return (
@@ -47,6 +48,15 @@ export default function About(props) {
         expertise. Together, we work collaboratively to achieve our goals and
         exceed customer expectations.
       </p>
+      <div className="text-center">
+        <div>
+          <img src={ceo} alt="logo" className="rounded-circle w-25" />
+          <p>
+            <strong>Mayush Kumar Raaz</strong> 
+            <p>Founder & CEO</p>
+          </p>
+        </div>
+      </div>
       {/* You can add more sections, such as testimonials, achievements, etc. */}
       
     </div>
