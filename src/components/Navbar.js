@@ -22,6 +22,9 @@ export default function Navbar(props) {
               <li className="nav-item">
                 <Link className="nav-link active" to="/contact" tabIndex="-1" aria-disabled="true">Contact</Link>
               </li>
+              <li className="nav-item">
+                <Link className="nav-link active" to="/feedback" tabIndex="-1" aria-disabled="true">Feedback</Link>
+              </li>
             </ul>
             {/* <form className="d-flex m-2">
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />

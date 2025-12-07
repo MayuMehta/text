@@ -11,6 +11,7 @@ import Navbar from './components/Navbar.js';
 import TextForm from './components/TextForm.js';
 import Alert from './components/Alert.js';
 import Contactus from './components/Contactus.js';
+import Feedback from './components/Feedback.js';
 
 
 function App() {
@@ -61,6 +62,8 @@ function App() {
               <TextForm color={bgColor} textColor={textColor} showAlert={showAlert}/>}/>
           <Route path="/contact" 
             Component={()=><Contactus textColor={textColor} />}/>
+          <Route path='/feedback' 
+            Component={()=><Feedback textColor={textColor}/>}/>
         </Routes>
         <Footer title='TextWorld'/>    
       </Router> 

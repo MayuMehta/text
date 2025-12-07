@@ -3,7 +3,7 @@ import React from "react";
 function Contactus(props) {
   return (
     <>
-      <div className={`container d-flex justify-content-center text-${props.textColor} min-vh-100 py-4`}>
+      <div className={`container min-vh-100 d-flex justify-content-center align-items-center text-${props.textColor} py-4`}>
         <div className="border p-4 h-100">
           <h2>Contact Us</h2>
           <p>if you have any query, fill this form. We'll get back to you.</p>
