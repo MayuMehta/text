@@ -1,10 +1,11 @@
 import React from "react";
+import "./style.css";
 
 function Contactus(props) {
   return (
     <>
       <div className={`container min-vh-100 d-flex justify-content-center align-items-center text-${props.textColor} py-4`}>
-        <div className="border p-4 h-100">
+        <div className="bor-div border p-4 h-100">
           <h2>Contact Us</h2>
           <p>if you have any query, fill this form. We'll get back to you.</p>
           <form action="" className="py-3">
@@ -23,7 +24,7 @@ function Contactus(props) {
               <br />
               <textarea name="message" id="message" className="w-100" rows={5}></textarea>
             </div>
-            <input type="submit" value="Submit" className="btn btn-success" />
+            <input type="submit" value="Submit" className="bor-div btn btn-success" />
           </form>
         </div>
       </div>

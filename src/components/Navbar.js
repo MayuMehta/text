@@ -30,7 +30,7 @@ export default function Navbar(props) {
               <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
               <button className="btn btn-outline-success" type="submit">Search</button>
             </form> */}
-            <button onClick={props.changeMode} className={`btn btn-outline-${props.color}`}>{props.text}</button>
+            <button onClick={props.changeMode} className={`bor-div btn btn-outline-${props.color}`}>{props.text}</button>
           </div>
         </div>
       </nav>

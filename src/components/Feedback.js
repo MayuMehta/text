@@ -1,9 +1,10 @@
 import React from 'react'
+import "./style.css";
 
 export default function Feedback(props) {
   return (
     <div className={`min-vh-100 text-${props.textColor} d-flex justify-content-center align-items-center`}>
-        <div className='border rounded p-3'>
+        <div className='bor-div border rounded p-3'>
             <h2>Feedback</h2>
             <p>We value your feedback! Please let us know your thoughts and suggestions.</p>
             <form>
@@ -19,7 +20,7 @@ export default function Feedback(props) {
                 <br />
                 <textarea name="feedback" id="feedback" className="w-100 mb-2" rows={5}></textarea>
                 <br />
-                <input type="submit" value="Submit" className="btn btn-success"/>
+                <input type="submit" value="Submit" className="bor-div btn btn-success"/>
             </form>
         </div>
     </div>

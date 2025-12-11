@@ -1,5 +1,6 @@
 import React from "react";
 import ceo from "../assets/copy.png"
+import "./style.css";
 
 export default function About(props) {
   return (
@@ -50,7 +51,7 @@ export default function About(props) {
       </p>
       <div className="text-center">
         <div>
-          <img src={ceo} alt="logo" className="rounded-circle w-25" />
+          <img src={ceo} alt="logo" className="bor-div rounded-circle w-25" />
           <p>
             <strong>Mayush Kumar Raaz</strong> 
             <p>Founder & CEO</p>
