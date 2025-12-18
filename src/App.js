@@ -15,7 +15,7 @@ import Feedback from './components/Feedback.js';
 
 
 function App() {
-  const [bgColor, setbgColor]=useState('#fff');
+  const [bgColor, setbgColor]=useState('#EFE9E3');
   const [textColor, setTextColor]=useState('dark');
   const [text, setText]=useState('Dark');
   const [alert, setAlert]=useState(null); 
@@ -32,7 +32,7 @@ function App() {
   }
 
   const changeMode=()=>{
-    if(bgColor==='#fff'){
+    if(bgColor==='#EFE9E3'){
       setText('Light');
       setbgColor('dark');
       setTextColor('light');
@@ -40,18 +40,18 @@ function App() {
       document.body.style.backgroundColor='black';
       setNavText('dark')
     }else{
-      setbgColor('#fff');
+      setbgColor('#EFE9E3');
       setTextColor('dark')
       setText('Dark');
       showAlert("Enabled light mode","success")
-      document.body.style.backgroundColor='#fff';
+      document.body.style.backgroundColor='#EFE9E3';
       setNavText('light');
     }
   }
   return (
          
       <Router>
-        <Navbar bgColor={bgColor} textColor={navText} title='TextWorld' changeMode={changeMode} text={text} color={textColor} />
+        <Navbar textColor={navText} title='TextWorld' changeMode={changeMode} text={text} color={textColor} />
         <Alert alert={alert}/>
         {/* <TextForm color={bgColor} textColor={textColor} showAlert={showAlert}/> */}
         <Routes>
@@ -67,7 +67,6 @@ function App() {
         </Routes>
         <Footer title='TextWorld'/>    
       </Router> 
-    
   );
 }
 

@@ -5,7 +5,7 @@ export default function Navbar(props) {
 
   return (
     <div>
-      <nav className={`navbar navbar-expand-lg navbar-${props.textColor} bg-${props.bgColor}`}>
+      <nav className={`navbar navbar-expand-lg navbar-${props.textColor} bg-success`}>
         <div className="container">
           <Link className="navbar-brand" to="/">{props.title}</Link> 
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
